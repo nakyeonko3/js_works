@@ -1,13 +1,9 @@
-const hello_btn = document.querySelector(".hello_btn");
+const hello_btn = document.querySelector('.hello_btn');
 
+function init(times) {
+  hello_btn.addEventListener('click', handleClick);
 
-function init(times){
-    hello_btn.addEventListener('click', handleClick);
-
-    function handleClick(times){
-        console.log(`Hello, World ${++times}`);
-    }
+  function handleClick(times) {}
 }
 
-
-init(1)
+init(1);

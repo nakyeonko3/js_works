@@ -3,7 +3,6 @@ $(document).ready(function () {
     // Request desktop notifications permission on page load
 
     if (!Notification) {
-      console.log('Desktop notifications are not available in your browser.');
       return;
     }
 
