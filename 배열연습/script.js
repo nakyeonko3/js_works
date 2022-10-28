@@ -6,18 +6,14 @@ const form = document.querySelector('form'),
   deleteAll = document.querySelector('.deleteAll'),
   output = document.querySelector('.output');
 
-form.addEventListener(
-  'submit',
-  (event) => {
-    event.preventDefault();
-    submit_array.push(input_text.value);
-    const li = document.createElement('li');
-    li.innerText = input_text.value;
-    output.appendChild(li);
-    input_text.value = '';
-  },
-  true
-);
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  submit_array.push(input_text.value);
+  const li = document.createElement('li');
+  li.innerText = input_text.value;
+  output.appendChild(li);
+  input_text.value = '';
+});
 
 function deleteAllTodos() {
   deleteAll.addEventListener('click', (event) => {
