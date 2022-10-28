@@ -1,4 +1,3 @@
-console.log('hello, world!');
 const game_termainal = document.querySelector('.game-terminal');
 const start_button = document.querySelector('.start-button');
 
