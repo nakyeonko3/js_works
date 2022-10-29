@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>capture and bubble</title>
+    <style type="text/css">
+      #child {
+        background: red;
+        width: 50px;
+        height: 50px;
+      }
+      #father {
+        width: 100px;
+        height: 100px;
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="father">
+      <div id="child"></div>
+    </div>
+  </body>
+  <script type="text/javascript">
+  var parent = document.getElementById('father');
+    var child = document.getElementById('child');
+    var html = document.getElementsByTagName('html')[0];
+    var body = document.body;
+    parent.addEventListener(
+      'click',
+      function () {
+        console.log('I am capturing parent');
+      },
+      true
+    );
+    parent.addEventListener(
+      'click',
+      function () {
+        console.log('I am parent');
+      },
+      false
+    );
+    child.addEventListener(
+      'click',
+      function () {
+        console.log('I am capturing child');
+      },
+      true
+    );
+    child.addEventListener(
+      'click',
+      function () {
+        console.log('I am child');
+      },
+      false
+    );
+    console.log(object);
+    body.addEventListener(
+      'click',
+      function () {
+        console.log('I am capturing body');
+      },
+      true
+    );
+    body.addEventListener(
+      'click',
+      function () {
+        console.log('I am body');
+      },
+      false
+    );
+    html.addEventListener(
+      'click',
+      function () {
+        console.log('I am capturing html');
+      },
+      true
+    );
+    html.addEventListener(
+      'click',
+      function () {
+        console.log('I am html');
+      },
+      false
+    );
+    parent.addEventListener(
+      'click',
+      function () {
+        console.log('I am capturing parent');
+      },
+      true
+    );
+    parent.addEventListener(
+      'click',
+      function () {
+        console.log('I am parent');
+      },
+      false
+    );
+  </script>
+</html>
