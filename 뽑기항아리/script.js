@@ -5,8 +5,13 @@ const iwantTODO = [
   '침대에 누워서 음악 듣기',
   '밖에 나가서 뛰고 오기',
   '친구들이랑 놀러 가기',
+<<<<<<< HEAD
   '파파존스 피자 사먹기',
 ];
+=======
+  '파파존스 피자 사먹기'
+]
+>>>>>>> 49cfa1686d9ed449d2e9092bceb1b56b0c8353b6
 const button = document.querySelector('button'),
   span = document.querySelector('span');
 
