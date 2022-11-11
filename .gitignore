@@ -1,3 +1,7 @@
 *webm
 *lum.mp3
+*png
+*jpeg
+*jpg
 node_modules
+.venv

@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f0ef;
+}
+div {
+  position: relative;
+}
+
+h1 {
+  position: absolute;
+  z-index: 4;
+}
+
+img {
+  z-index: 2;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  object-fit: cover;
+  height: 100%;
+  max-width: 100%;
+}
+
+.font-white {
+  color: black;
+}
