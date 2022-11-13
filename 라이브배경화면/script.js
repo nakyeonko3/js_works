@@ -14,3 +14,15 @@ video.addEventListener('click', () => {
     flag = true;
   }
 });
+
+setInterval(
+  () => {
+    if (video.currentTime > 100) {
+      console.log('loop start');
+      video.currentTime = 10;
+    }
+  },
+  1000,
+  'Parameter 1',
+  'Parameter 2'
+);

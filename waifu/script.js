@@ -15,6 +15,7 @@ fetch('https://api.waifu.pics/sfw/waifu')
     console.log(data);
   });
 
+  const img2 = document.createElement('img')
 // async function putImg() {
 //   await get_animes().then(console.log(data));
 //   const img = document.createElement('img');
