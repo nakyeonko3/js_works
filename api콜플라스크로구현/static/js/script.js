@@ -15,9 +15,7 @@ const handleClick = () => {
 
   async function test() {
     const data = await getHello();
-
     const jsObectData = await data.json();
-
     const img = document.createElement('img');
     img.src = jsObectData.url;
 
