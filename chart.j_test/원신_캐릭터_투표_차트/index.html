@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-streaming@2.0.0 "></script>
+  </head>
+  <body>
+    <div class="flex-center">
+      <div>
+        <span class="text-size-small">또 깜빡하고 충전기를 안가져왔네</span>
+      </div>
+      <div>
+        <span class="text-size-big">아이고난!</span>
+      </div>
+      <div class="chart-size">
+        <canvas id="myChart"></canvas>
+      </div>
+    </div>
+    <script>
+      const ctx = document.getElementById('myChart');
+
+      new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: ['Ganyu', 'Azusa', 'Mika', 'Griseo', 'Keqing', 'Qiqi'],
+          datasets: [
+            {
+              label: '# of Votes',
+              data: [20, 19, 3, 5, 2, 3],
+              borderWidth: 1,
+            },
+          ],
+        },
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+            },
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
