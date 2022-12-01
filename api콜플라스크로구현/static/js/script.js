@@ -47,3 +47,38 @@ function init() {
 }
 
 init();
+
+
+// console.log('hello world');
+
+// const submit_form = document.querySelector('.submit_form');
+// const sensor_data_div = document.querySelector('.sensor_data_div');
+
+// const init = () => {
+//   submit_form.addEventListener('submit', handleSubmit);
+//   setInterval(renderSensorData, 1000);
+// };
+
+// const handleSubmit = (event) => {
+//   event.preventDefault();
+//   console.log('handle submit trggered');
+//   renderSensorData();
+// };
+
+// const getSensorData = () => {
+//   return fetch('/getSensorData')
+//     .then((response) => response.json())
+//     .then((data) => data.sensor_data);
+// };
+
+// const renderSensorData = async () => {
+//   const sensor_data = await getSensorData();
+//   sensor_data_div.innerText = sensor_data;
+// };
+
+// const getNowDateTime = () => {
+//     const now = new Date();
+//     console.log(now);
+// }
+
+// init();
